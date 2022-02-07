@@ -1,0 +1,5 @@
+2022-02-01 17:43:21 - Plugin wurde deaktiviert 
+2022-02-01 17:43:22 - Aktiviere Plugin 
+2022-02-01 17:43:22 - Erstelle general information Datenbank 
+2022-02-01 17:43:22 - Erfolgreich geseeded 
+2022-02-01 17:43:22 - Plugin aktiviert 
