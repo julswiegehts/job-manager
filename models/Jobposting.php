@@ -22,7 +22,7 @@ class Jobposting
      *
      * @param array $data
      */
-    public function __construct(array $data, Location ...$locations)
+    public function __construct(array $data, JobLocation ...$locations)
     {
 //        $this-> = isset($data['']) ? $data[''] : null;
 

@@ -1,6 +1,6 @@
 <?php
 
-class Location
+class JobLocation
 {
 
     private $id;
