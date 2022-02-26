@@ -22,10 +22,11 @@ class Jobposting
      *
      * @param array $data
      */
-    public function __construct(array $data, JobLocation ...$locations)
+    public function __construct(array $data, $locations)
     {
 //        $this-> = isset($data['']) ? $data[''] : null;
 
+        $this->id = isset($data['id']) ? $data['id'] : null;
         $this->referencenumber = isset($data['referencenumber']) ? $data['referencenumber'] : null;
         $this->title = isset($data['title']) ? $data['title'] : null;
         $this->description = isset($data['description']) ? $data['description'] : null;
@@ -69,12 +70,12 @@ class Jobposting
      *
      * @return array of locations
      */
-    private function locationsToArray()
+    private function locationsToArray(bool $withDates = true)
     {
         // TODO: map to get locations as array instead of class (using the toArray Class from location)
         $locations = [];
         foreach ($this->locations as $location) {
-            array_push($locations, $location->toArray(true));
+            array_push($locations, $location->toArray($withDates));
         }
         return $locations;
     }

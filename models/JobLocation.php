@@ -4,6 +4,7 @@ class JobLocation
 {
 
     private $id;
+    private $jobposting_id;
     private $postalcode;
     private $city;
     private $state;
@@ -23,6 +24,7 @@ class JobLocation
     public function __construct(array $data)
     {
         $this->id = isset($data['id']) ? $data['id'] : null;
+        $this->jobposting_id = isset($data['jobposting_id']) ? $data['jobposting_id'] : null;
         $this->postalcode = isset($data['postalcode']) ? $data['postalcode'] : null;
         $this->city = isset($data['city']) ? $data['city'] : null;
         $this->state = isset($data['state']) ? $data['state'] : null;
@@ -41,6 +43,7 @@ class JobLocation
     {
         $location = [
             "id" => $this->id,
+            "jobposting_id" => $this->jobposting_id,
             "postalcode" => $this->postalcode,
             "city" => $this->city,
             "state" => $this->state,

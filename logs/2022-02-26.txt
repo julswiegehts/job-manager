@@ -1,0 +1,13 @@
+2022-02-26 14:01:06 - Aktiviere Plugin 
+2022-02-26 14:01:06 - Erstelle general information Datenbank 
+2022-02-26 14:01:06 - Erfolgreich geseeded 
+2022-02-26 14:01:06 - Erstelle jobposting Datenbank 
+2022-02-26 14:01:06 - Erstelle Job Location Datenbank 
+2022-02-26 14:01:06 - Plugin aktiviert 
+2022-02-26 14:01:55 - Plugin wurde deaktiviert 
+2022-02-26 14:01:56 - Aktiviere Plugin 
+2022-02-26 14:01:56 - Erstelle general information Datenbank 
+2022-02-26 14:01:56 - Erfolgreich geseeded 
+2022-02-26 14:01:56 - Erstelle jobposting Datenbank 
+2022-02-26 14:01:56 - Erstelle Job Location Datenbank 
+2022-02-26 14:01:56 - Plugin aktiviert 
