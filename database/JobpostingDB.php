@@ -26,11 +26,13 @@ class JobpostingDB extends DatabaseModule
         $wpdb->query("START TRANSACTION");
 
         $wpdb->insert($jobpostingTableName, $jobposting);
+        $jobposting_id = $wpdb->insert_id;
         foreach ($jobposting['locations'] as $location) {
-
+            $location['jobposting_id'] = $jobposting_id;
+            $wpdb->insert($jobLocationTableName, $location);
         }
 
-
+        // Commit the transaction
         $wpdb->query("COMMIT");
 
 

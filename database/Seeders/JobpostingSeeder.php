@@ -3,9 +3,12 @@
 class JobpostingSeeder
 {
 
-    public function seedRandomJobpostings($count = 18)
+    public function seedRandomJobpostings($count = 1)
     {
-
+        $jobpostingDB = new JobpostingDB();
+        foreach ($count as $item) {
+            $jobpostingDB->storeJobposting($this->getRandomJobposting());
+        }
     }
 
     public function getRandomJobposting(int $locationCount = -1)
